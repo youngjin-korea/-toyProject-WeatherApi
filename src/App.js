@@ -3,12 +3,12 @@ import "./App.css";
 import { useState } from "react";
 import { async } from "q";
 import axios from "axios";
-// apiKey = a978b9fc4fa937c23c99958a74af69bb
+
 // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 function App() {
   const [location, setLocation] = useState("");
   const [result, setResult] = useState({});
-  const API_key = "a978b9fc4fa937c23c99958a74af69bb";
+  const API_key = "";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_key}`;
   const searchWeather = async (e) => {
     if (e.key === "Enter") {
